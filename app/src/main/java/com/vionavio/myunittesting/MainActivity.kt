@@ -62,15 +62,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                         visible()
                     }
                     v.id == R.id.btn_calculate_circumference -> {
-                        mainViewModel.getCircumference()
+                        tvResult.text = mainViewModel.getCircumference().toString()
                         gone()
                     }
                     v.id == R.id.btn_calculate_surface_area -> {
-                        mainViewModel.getSurfaceArea()
+                        tvResult.text = mainViewModel.getSurfaceArea().toString()
                         gone()
                     }
                     v.id == R.id.btn_calculate_volume -> {
-                        mainViewModel.getVolume()
+                        tvResult.text = mainViewModel.getVolume().toString()
                         gone()
                     }
                 }
